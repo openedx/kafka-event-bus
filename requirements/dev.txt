@@ -17,7 +17,7 @@ astroid==3.3.8
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   pylint
     #   pylint-celery
-attrs==24.3.0
+attrs==25.1.0
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   confluent-kafka
@@ -34,7 +34,7 @@ build==1.2.2.post1
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/pip-tools.txt
     #   pip-tools
-cachetools==5.5.0
+cachetools==5.5.1
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/ci.txt
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
@@ -73,7 +73,7 @@ click-log==0.4.0
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   edx-lint
-code-annotations==2.1.0
+code-annotations==2.2.0
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   edx-lint
@@ -82,7 +82,7 @@ colorama==0.4.6
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/ci.txt
     #   tox
-confluent-kafka[avro,schema-registry]==2.7.0
+confluent-kafka[avro,schema-registry]==2.8.0
     # via -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
 coverage[toml]==7.6.10
     # via
@@ -104,7 +104,7 @@ distlib==0.3.9
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/ci.txt
     #   virtualenv
-django==4.2.17
+django==4.2.18
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
@@ -143,7 +143,7 @@ edx-django-utils==7.1.0
     #   openedx-events
 edx-i18n-tools==1.6.3
     # via -r requirements/dev.in
-edx-lint==5.4.1
+edx-lint==5.6.0
     # via -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
 edx-opaque-keys[django]==2.11.0
     # via
@@ -157,7 +157,7 @@ fastavro==1.10.0
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   confluent-kafka
     #   openedx-events
-filelock==3.16.1
+filelock==3.17.0
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/ci.txt
     #   tox
@@ -170,17 +170,21 @@ httpcore==1.0.7
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   httpx
-httpx==0.27.2
+httpx==0.28.1
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   confluent-kafka
+id==1.5.0
+    # via
+    #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
+    #   twine
 idna==3.10
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   anyio
     #   httpx
     #   requests
-importlib-metadata==8.5.0
+importlib-metadata==8.6.1
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   keyring
@@ -240,7 +244,7 @@ mdurl==0.1.2
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   markdown-it-py
-more-itertools==10.5.0
+more-itertools==10.6.0
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   jaraco-classes
@@ -253,7 +257,7 @@ nh3==0.2.20
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   readme-renderer
-openedx-events==9.15.0
+openedx-events==9.15.2
     # via -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
 packaging==24.2
     # via
@@ -273,10 +277,6 @@ pbr==6.1.0
     #   stevedore
 pip-tools==7.4.1
     # via -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/pip-tools.txt
-pkginfo==1.12.0
-    # via
-    #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
-    #   twine
 platformdirs==4.3.6
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/ci.txt
@@ -339,7 +339,7 @@ pynacl==1.5.0
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   edx-django-utils
-pyproject-api==1.8.0
+pyproject-api==1.9.0
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/ci.txt
     #   tox
@@ -374,6 +374,7 @@ requests==2.32.3
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   confluent-kafka
+    #   id
     #   requests-toolbelt
     #   twine
 requests-toolbelt==1.0.0
@@ -401,7 +402,6 @@ sniffio==1.3.1
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   anyio
-    #   httpx
 snowballstemmer==2.2.0
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
@@ -424,21 +424,22 @@ tomlkit==0.13.2
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   pylint
-tox==4.23.2
+tox==4.24.1
     # via -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/ci.txt
-twine==6.0.1
+twine==6.1.0
     # via -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
 typing-extensions==4.12.2
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   anyio
     #   edx-opaque-keys
-urllib3==2.3.0
+urllib3==2.2.3
     # via
+    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/quality.txt
     #   requests
     #   twine
-virtualenv==20.28.1
+virtualenv==20.29.1
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/ci.txt
     #   tox

@@ -10,14 +10,14 @@ asgiref==3.8.1
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/base.txt
     #   django
-attrs==24.3.0
+attrs==25.1.0
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/base.txt
     #   confluent-kafka
     #   openedx-events
 avro==1.12.0
     # via confluent-kafka
-cachetools==5.5.0
+cachetools==5.5.1
     # via confluent-kafka
 certifi==2024.12.14
     # via
@@ -35,12 +35,12 @@ click==8.1.8
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/base.txt
     #   code-annotations
     #   edx-django-utils
-code-annotations==2.1.0
+code-annotations==2.2.0
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/base.txt
     #   -r requirements/test.in
     #   edx-toggles
-confluent-kafka[avro,schema-registry]==2.7.0
+confluent-kafka[avro,schema-registry]==2.8.0
     # via -r requirements/test.in
 coverage[toml]==7.6.10
     # via pytest-cov
@@ -93,7 +93,7 @@ h11==0.14.0
     # via httpcore
 httpcore==1.0.7
     # via httpx
-httpx==0.27.2
+httpx==0.28.1
     # via confluent-kafka
 idna==3.10
     # via
@@ -114,7 +114,7 @@ newrelic==10.4.0
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/base.txt
     #   edx-django-utils
-openedx-events==9.15.0
+openedx-events==9.15.2
     # via -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/base.txt
 packaging==24.2
     # via pytest
@@ -163,9 +163,7 @@ six==1.17.0
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/base.txt
     #   edx-ccx-keys
 sniffio==1.3.1
-    # via
-    #   anyio
-    #   httpx
+    # via anyio
 sqlparse==0.5.3
     # via
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/base.txt
@@ -185,5 +183,7 @@ typing-extensions==4.12.2
     #   -r /home/runner/work/event-bus-kafka/event-bus-kafka/requirements/base.txt
     #   anyio
     #   edx-opaque-keys
-urllib3==2.3.0
-    # via requests
+urllib3==2.2.3
+    # via
+    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
+    #   requests

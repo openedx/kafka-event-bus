@@ -6,7 +6,7 @@
 #
 asgiref==3.8.1
     # via django
-attrs==24.3.0
+attrs==25.1.0
     # via openedx-events
 cffi==1.17.1
     # via pynacl
@@ -14,9 +14,9 @@ click==8.1.8
     # via
     #   code-annotations
     #   edx-django-utils
-code-annotations==2.1.0
+code-annotations==2.2.0
     # via edx-toggles
-django==4.2.17
+django==4.2.18
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
@@ -56,7 +56,7 @@ markupsafe==3.0.2
     # via jinja2
 newrelic==10.4.0
     # via edx-django-utils
-openedx-events==9.15.0
+openedx-events==9.15.2
     # via -r requirements/base.in
 pbr==6.1.0
     # via stevedore
